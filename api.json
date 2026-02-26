@@ -29,5 +29,11 @@
                 "Disponível nos tamanhos 36-44"
             ]
         }
+    ],
+    "login": [
+        {
+            "email": "jonas@gmail.com",
+            "senha": "1234"
+        }
     ]
 }
