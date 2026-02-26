@@ -1,39 +1,69 @@
 {
-    "product": [
-        {
-            "id": 1,
-            "name": "Tênis Esportivo",
-            "slug": "tenis-esportivo",
-            "preco": 199.99,
-            "desconto": 100,
-            "descricao": "asdjashdjashdjahsdjahsdjahsjdhasjdhasjdhasjdhajsdhajsdhajsdhajsdhajshdajsdhajshdjasdhjashdjadhjasdhajshdajsdhasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd",
-            "categoria": "Calçados",
-            "estoque": 15,
-            "peso": 30.3,
-            "avaliacao": 4.5,
-            "imagens": [
-                "/vite.svg",
-                "/vite.svg",
-                "/vite.svg",
-                "/vite.svg",
-                "/vite.svg",
-                "/vite.svg",
-                "/vite.svg",
-                "/vite.svg",
-                "/vite.svg",
-                "/vite.svg"
-            ],
-            "detalhes": [
-                "Material respirável",
-                "Solado antiderrapante",
-                "Disponível nos tamanhos 36-44"
-            ]
-        }
-    ],
-    "login": [
-        {
-            "email": "israel@email.com",
-            "senha": "123456"
-        }
-    ]
+  "product": [
+    {
+      "id": 1,
+      "name": "Tênis Esportivo",
+      "slug": "tenis-esportivo",
+      "preco": 199.99,
+      "desconto": 100,
+      "descricao": "asdjashdjashdjahsdjahsdjahsjdhasjdhasjdhasjdhajsdhajsdhajsdhajsdhajshdajsdhajshdjasdhjashdjadhjasdhajshdajsdhasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd",
+      "categoria": "Calçados",
+      "estoque": 15,
+      "peso": 30.3,
+      "avaliacao": 4.5,
+      "imagens": [
+        "/vite.svg",
+        "/vite.svg",
+        "/vite.svg",
+        "/vite.svg",
+        "/vite.svg",
+        "/vite.svg",
+        "/vite.svg",
+        "/vite.svg",
+        "/vite.svg",
+        "/vite.svg"
+      ],
+      "detalhes": [
+        "Material respirável",
+        "Solado antiderrapante",
+        "Disponível nos tamanhos 36-44"
+      ]
+    }
+  ],
+  "login": [
+    {
+      "email": "israel@email.com",
+      "senha": "123456"
+    }
+  ],
+  "register": [
+    {
+      "name": "israel",
+      "email": "israel2@email.com",
+      "phone": "85988292827",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "name": "marco",
+      "email": "israel@email.com",
+      "phone": "85988292828",
+      "password": "654321",
+      "id": 2
+    },
+    {
+      "name": "marco",
+      "email": "israel@email.com",
+      "phone": "85988292827",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "name": "israel",
+      "email": "israel@email.com",
+      "phone": "85988292827",
+      "password": "123456",
+      "id": 4
+    }
+  ]
 }

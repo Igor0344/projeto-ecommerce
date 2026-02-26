@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { useSearchParams, useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router";
 import { AXIOS } from "../services"
+
 
 export default function ResetPassword() {
     const [seachParams] = useSearchParams();
@@ -60,8 +61,48 @@ export default function ResetPassword() {
                             {error}
                         </div>
                     )}
+                    {success && (
+                        <div className="">
+                            {success}
+                        </div>
+                    )}
+
+                    <form onSubmit={handleSubmit} className="space-y-4">
+                        <input 
+                        type="password"
+                        placeholder="Nova senha"
+                        required
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        className=""
+                        />
+
+                        <input 
+                        type="password"
+                        placeholder="Confirmar nova senha"
+                        required
+                        value={confirmPassword}
+                        onChange={(e) => setConfirmPassword(e.target.value)}
+                        className=""
+                        />
+
+                        <button 
+                        type="submit"
+                        disabled={loading || !token}
+                        className=""
+                        >
+
+                            {loading ? "Salvando..." : "Alterar senha"}
+                        </button>
+                    </form>
+
+                    {!token && (
+                        <p className="">
+                            Token inválido ou expirado
+                        </p>
+                    )}
             </div>
             </main>
         </div>
-    )
+    );
 }

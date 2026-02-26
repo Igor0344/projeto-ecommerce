@@ -34,15 +34,15 @@ export default function Register() {
 
         try {
             setLoading(true);
-            await AXIOS.post("/register", {
+           const request = await AXIOS.post("/register", {
                 name: form.name,
                 email: form.email,
                 phone: form.phone || null,
                 password: form.password,
             });
-
+            
             setSuccess("Conta criada com sucesso!");
-
+            
             setForm({
                 name: "",
                 email: "",
@@ -50,6 +50,7 @@ export default function Register() {
                 password: "",
                 confirmPassword: "",
             });
+            console.log(request.data)
         } catch (err) {
             setError(
                 err.response?.data?.message ||

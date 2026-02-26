@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {AXIOS} from "../services"
+import { AXIOS } from "../services"
 
 export default function Login() {
     const [form, setForm] = useState({
@@ -21,11 +21,25 @@ export default function Login() {
 
         try {
             setLoading(true);
-           const request = await AXIOS.get("/login");
-           setUser(request.data)
+
+            const request = await AXIOS.get("/login");
+
+            const foundUser = request.data.find(
+                e => e.email === form.email
+            );
+
+            if (!foundUser) {
+                throw new Error("Email ou senha inválidos.");
+            }
+
+            setUser(foundUser);
+            console.log(foundUser);
+
         } catch (err) {
             setError(
-                err.response?.data?.message || "Email ou senha inválidos."
+                err.response?.data?.message ||
+                err.message ||
+                "Email ou senha inválidos."
             );
         } finally {
             setLoading(false);
@@ -33,17 +47,7 @@ export default function Login() {
     }
 
     return (
-        <div className="min-h-screen bg-gray-100 flex flex-col">
-            <header className="bg-zinc-900 shadow-sm">
-                <div className="max-w-6xl mx-auto px-4 py-4 flex itens-center justify-between">
-                    <h1 className="text-xl font-mono text-gray-300">3Dtech</h1>
-                    <a href="/register"
-                        className="text-sm text-gray-300 hover:text-purple-600 transition"
-                    >
-                        Cadastrar-se
-                    </a>
-                </div>
-            </header>
+        <div className="bg-(--bg) min-h-screen  flex flex-col">
             <main className="flex-1 flex items-center justify-center px-4">
                 <div className="w-full max-w-md bg-white rounded-2xl shadow-md p-6 sm:p-8">
                     <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
