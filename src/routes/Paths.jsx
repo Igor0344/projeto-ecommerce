@@ -6,7 +6,7 @@ import ForgotPassword from "../pages/ForgotPassword";
 import PageLayout from "../layouts/PageLayout";
 import AuthLayout from "../layouts/AuthLayout";
 import PageProduct from "../pages/PageProduct";
-import Checkout from "../pages/Checkout";
+import ResetPassword from "../pages/ResetPassword";
 
 const Paths = () => {
     return (
@@ -23,6 +23,7 @@ const Paths = () => {
                     <Route path="/register" element={<Register />} />
                     <Route path="/forgot-password" element={<ForgotPassword />} />
                     <Route path="/product/:slug" element={<PageProduct />} />
+                    <Route path="/reset-password" element={<ResetPassword />} />
                 </Route>
                 <Route path="/dashboard" element={''}>
                 </Route>
