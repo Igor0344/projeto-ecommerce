@@ -1,13 +1,12 @@
 import { HeadProvider } from "react-head";
-import Header from "./components/Header";
-import Menu from "./components/Menu";
 import Paths from "./routes/Paths";
+import { CartProvider } from "./contexts/CartProvider";
 function App() {
   return (
     <HeadProvider>
-     <Categoria/>
-      <Depoimentos />
-      <Paths />
+      <CartProvider>
+        <Paths />
+      </CartProvider>
     </HeadProvider>
   );
 }
