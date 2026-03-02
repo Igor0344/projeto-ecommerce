@@ -4,7 +4,7 @@ import { AXIOS } from "../services"
 export default function Login() {
     const [form, setForm] = useState({
         email: "",
-        password: "",
+        senha: "",
     });
 
     const [loading, setLoading] = useState(false);
@@ -73,10 +73,10 @@ export default function Login() {
                         <div>
                             <input
                                 type="password"
-                                name="password"
+                                name="senha"
                                 placeholder="Senha"
                                 required
-                                value={form.password}
+                                value={form.senha}
                                 onChange={handleChange}
                                 className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200"
                             />
