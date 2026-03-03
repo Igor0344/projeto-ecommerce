@@ -5,7 +5,7 @@ import { useNavigate } from "react-router";
 
 export default function Login() {
 
-    const {login} = useUser()
+    const { login } = useUser()
     const navigate = useNavigate()
 
     const [form, setForm] = useState({
@@ -15,7 +15,7 @@ export default function Login() {
 
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
-    const [user, setUser] = useState()
+    // const [user, setUser] = useState()
 
     function handleChange(e) {
         setForm({ ...form, [e.target.name]: e.target.value });

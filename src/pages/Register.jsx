@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useUser } from "../contexts/UsuarioProvider";
-import { isValidCPF, isValidPhone } from "../utils";
+import { isValidCPF, isValidPhone, maskCPF, maskPhone } from "../utils";
 
 export default function Register() {
   const { register } = useUser();
@@ -34,7 +34,7 @@ export default function Register() {
       return;
     }
 
-    if (form.phone && !isValidPhone(form.telefone)) {
+    if (form.telefone && !isValidPhone(form.telefone)) {
       console.log("Telefone inválido:", form.phone);
       setError("Telefone inválido. Use DDD + número.");
       return;
@@ -133,7 +133,7 @@ export default function Register() {
               name="cpf"
               placeholder="CPF"
               required
-              value={form.cpf}
+              value={maskCPF(form.cpf)}
               onChange={handleChange}
               className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200"
             />
@@ -153,7 +153,7 @@ export default function Register() {
               name="telefone"
               placeholder="Telefone"
               required
-              value={form.telefone}
+              value={maskPhone(form.telefone)}
               onChange={handleChange}
               className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200"
             />
