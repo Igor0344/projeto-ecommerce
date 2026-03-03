@@ -84,14 +84,14 @@ const Depoimentos = () => {
 
           <div className="relative z-10">
             <h3 className="text-3xl md:text-5xl font-black text-white mb-6 tracking-tighter uppercase italic">
-              🚀 Engenharia & Criatividade 🚀
+              🚀 3D Tech 🚀
             </h3>
             <p className="text-blue-400 font-bold mb-8 tracking-[0.3em] uppercase text-xs">
               A tecnologia que você sente no toque
             </p>
             <div className="space-y-6">
                 <p className="text-gray-300 text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
-                  Na <span className="text-white font-bold tracking-tight">3DCOMTECH</span>, não apenas imprimimos objetos; nós <span className="text-white font-semibold">materializamos inovação</span>. Combinamos o rigor do desenvolvimento de software com a precisão da manufatura 3D.
+                  Na <span className="text-white font-bold tracking-tight">3D Tech</span>, não apenas imprimimos objetos; nós <span className="text-white font-semibold">materializamos inovação</span>. Combinamos o rigor do desenvolvimento de software com a precisão da manufatura 3D.
                 </p>
                 <p className="text-gray-400 text-sm md:text-base max-w-2xl mx-auto font-light border-t border-white/10 pt-6 italic">
                   Transformamos designs complexos em peças tangíveis com personalidade única.

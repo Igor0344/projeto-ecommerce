@@ -4,25 +4,24 @@ import { motion } from 'framer-motion';
 const Categoria = () => {
   const categorias = [
     { 
-      titulo: "Frontend", 
+      titulo: "Backend & FrontEnd", 
       cor: "from-blue-500", 
-      // Substitua pela URL da sua foto de linguagens/chaveiros
-      imagem: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?q=80&w=500&auto=format&fit=crop" 
+      imagem: "https://down-br.img.susercontent.com/file/aaab4fb29ec0124082630406d06efeb1" // código/backend
     },
     { 
-      titulo: "Backend", 
+      titulo: "Infraestrutura & DevOps", 
       cor: "from-purple-500", 
-      imagem: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=500&auto=format&fit=crop" 
+      imagem: "https://down-br.img.susercontent.com/file/aaab4fb29ec0124082630406d06efeb1"
     },
     { 
-      titulo: "Mobile", 
+      titulo: "Cyber & Segurança", 
       cor: "from-orange-500", 
-      imagem: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=500&auto=format&fit=crop" 
+      imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTth4EomPVaZTAMmA7cZ2-fLGpTLo-lVN88ow&s"
     },
     { 
-      titulo: "DevOps", 
+      titulo: "Chaveiros Tech 3D", 
       cor: "from-emerald-500", 
-      imagem: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=500&auto=format&fit=crop" 
+      imagem: "https://down-br.img.susercontent.com/file/aaab4fb29ec0124082630406d06efeb1" // imagem de chaveiros 3D do link fornecido
     },
   ];
 
